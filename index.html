@@ -360,6 +360,59 @@
       </div>
       </section>
     </main>
+
+<!-- MODAL -->
+<div class="modal-overlay is-open">
+  <div class="modal">
+    <button class="close-btn">
+      <svg width="8" height="8" class="icons-close">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <p class="modal-title">Leave your contacts and we will call you back</p>
+    <form class="modal-form">
+    <div class="form-field">
+      <label class="form-label" for="fullName">Name</label>
+      <div class="input-wrapper">
+        <input class="form-input" name="fullName" id="fullName" type="text" required />
+        <svg class="form-icon" width="18" height="24">
+          <use href="./images/icons.svg#icon-person"></use>
+        </svg>
+      </div>
+    </div>
+    <div class="form-field">
+      <label class="form-label" for="tel">Phone</label>
+      <div class="input-wrapper">
+        <input class="form-input" name="tel" id="tel" type="tel" required/>
+        <svg class="form-icon" width="18" height="24">
+          <use href="./images/icons.svg#icon-phone"></use>
+        </svg>
+      </div>
+    </div>
+    <div class="form-field">
+      <label class="form-label" for="email">Email</label>
+      <div class="input-wrapper">
+        <input class="form-input" name="email" id="email" type="email" required />
+        <svg class="form-icon" width="18" height="24">
+          <use href="./images/icons.svg#icon-email"></use>
+        </svg>
+      </div>
+    </div>
+      <label class="form-label" for="comment">Comment</label>
+      <div class="input-wrapper">
+      <textarea  class="form-textarea" name="comment" id="comment" rows="5" placeholder="Text input"></textarea>
+    </div>
+   
+    <div class="checkbox-container">
+      <input class="checkbox-input" type="checkbox" name="checkbox" id="checkbox" required>
+      <label for="checkbox">I accept the terms and conditions of the <span><a href="" class="privacy-policy">Privacy Policy</a></span></label>
+    </div>
+  </form>
+  <button class="send-btn">Send</button>
+  
+  </div>
+</div>
+
     <!--Footer-->
     <footer class="footer">
       <div class="container">
@@ -405,7 +458,19 @@
           </li>
         </ul>
       </div>
+      <div class="input-footer">
+        <label class="input-title-footer">Subscribe
+        <input class="input-area-footer" type="email" name="footer_email" placeholder="E-mail">
+      </label>
+        <button class="footer-btn" type="submit">Subscribe
+          <svg class="input-footer-icon-btn" width="24" height="24">
+            <use href="./images/icons.svg#icon-telegram"></use>
+          </svg>
+        </button>
+      </div>
     </div>
     </footer>
+
+    
   </body>
 </html>
