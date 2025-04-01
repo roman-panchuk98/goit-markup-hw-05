@@ -602,7 +602,7 @@ h1,h2,h3,h4,h5,h6,p,ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 100%;
+    border-radius: 50%;
     width: 24px;
     height: 24px;
     margin-left: auto;
@@ -644,7 +644,6 @@ margin-bottom: 24px;
 
 .form-field {
 margin-bottom: 8px;
-
 }
 
 .form-label {
@@ -716,18 +715,6 @@ position: relative;
 
 
 
-
-.checkbox-container {
-    display: flex;
-    gap: 8px;
-    align-items: center;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.16667;
-    letter-spacing: 0.04em;
-    color: #8e8f99;
-}
-
 .send-btn {
     margin: 0 auto;
     font-weight: 500;
@@ -755,3 +742,57 @@ position: relative;
     text-decoration-skip-ink: none;
     color: #4d5ae5;
 }
+
+.checkbox-container {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.accept-box {
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    min-width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-checkbox {
+    fill: #fcfcfc;
+}
+
+.accept-box:active,
+.accept-box:focus {
+    background-color: #404BBF;
+    border-color:#404BBF;
+
+}
+
+
+
+
+
+
+
