@@ -8,27 +8,6 @@ ul,ol {
    list-style-type: none;
 }
 
-/* input {
-    font-family: inherit;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-    outline: none;
-}
-
-textarea {
-    resize: none;
-    font-family: inherit;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.16667;
-    letter-spacing: 0.04em;
-    color: rgba(46, 47, 66, 0.4); 
-    outline: none;
-} */
-
 a {
     text-decoration: none;
     color:#434455;
@@ -590,7 +569,6 @@ h1,h2,h3,h4,h5,h6,p,ul {
     background-color: #fcfcfc;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 4px;
-    padding: 24px;
     width: 408px;
     min-height: 584px;
     max-height: 80%;
@@ -620,6 +598,7 @@ h1,h2,h3,h4,h5,h6,p,ul {
 .close-btn:hover, 
 .close-btn:focus  {
     background-color: #404BBF;
+    border: none;
 }
 
 .icons-close {
@@ -662,6 +641,7 @@ margin-bottom: 24px;
 .form-input:hover,
 .form-input:focus-within {
     border-color:#4D5AE5; 
+
 }
 
 .input-wrapper:hover .form-icon,
@@ -696,6 +676,10 @@ position: relative;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.input-textarea {
+    margin-bottom: 16px;
+}
+
 .form-textarea {
     resize: none;
     width: 100%;
@@ -710,7 +694,6 @@ position: relative;
     color: rgba(46, 47, 66, 0.4);
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
-    margin-bottom: 16px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -727,48 +710,6 @@ position: relative;
     border-color:#4D5AE5;
 }
 
-.checkbox-container {
-    display: flex;
-    gap: 8px;
-    align-items: center;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.16667;
-    letter-spacing: 0.04em;
-    color: #8e8f99;
-    margin-bottom: 24px;
-}
-
-.send-btn { 
-    display: block;
-    margin: 0 auto;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: #fff;
-    font-size: 16px;
-    background: #4d5ae5;
-    width: 169px;
-    height: 56px;
-    border: none;
-    border-radius: 4px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-}
-
-.send-btn:hover,
-.send-btn:focus {
-    background-color: #404bbf;
-}
-
-.privacy-policy {
-    line-height: 1.33333;
-    text-decoration: underline;
-    text-decoration-skip-ink: none;
-    color: #4d5ae5;
-}
-
-
 
 .visually-hidden {
     position: absolute;
@@ -783,32 +724,62 @@ position: relative;
     overflow: hidden;
 }
 
-.accept-box {
-    border-radius: 2px;
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    min-width: 16px;
+.checkbox-container {
+    margin-bottom: 24px;
+}
+
+.checkbox-title {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+}
+
+.checkbox-icon {
+    display: inline-flex;
+    width: 16px;
     height: 16px;
-    display: flex;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px; 
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     align-items: center;
     justify-content: center;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: transparent;
+    margin-right: 8px;
 }
 
-.icon-checkbox {
-    fill: #fcfcfc;
-}
 
-.accept-box:active,
-.accept-box:focus {
+.visually-hidden:checked + .checkbox-title > .checkbox-icon {
     background-color: #404BBF;
-    border-color:#404BBF;
+    fill: #F4F4FD;
+    border: none;
+}
 
+.privacy-policy {
+ color:  #4d5ae5;
+ text-decoration: underline;
 }
 
 
+.send-btn { 
+    display: block;
+    margin: 0 auto;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+    font-size: 16px;
+    background: #4d5ae5;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
 
-
-
-
-
+.send-btn:hover,
+.send-btn:focus {
+    background-color: #404bbf;
+}
